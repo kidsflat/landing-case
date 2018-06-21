@@ -1,32 +1,28 @@
 {
-  "name": "landing-case",
+  "name": "itvdn-landing",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is langing tutorial for ITVDN students",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kidsflat/landing-case.git"
+    "url": "git+https://github.com/sergeyamator/itvdn-landing.git"
   },
-  "author": "",
+  "author": "Sergey Rubets",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kidsflat/landing-case/issues"
+    "url": "https://github.com/sergeyamator/itvdn-landing/issues"
   },
-  "homepage": "https://github.com/kidsflat/landing-case#readme",
+  "homepage": "https://github.com/sergeyamator/itvdn-landing#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.18.8",
     "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp.spritesmith": "^6.9.0",
-    "rimraf": "^2.6.2"
-  },
-  "dependencies": {
-    "gulp-rename": "^1.3.0"
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp.spritesmith": "^6.3.0",
+    "rimraf": "^2.6.1"
   }
 }

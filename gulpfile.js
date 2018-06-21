@@ -30,12 +30,14 @@ gulp.task('templates:compile', function buildHTML() {
 
 
 
-  gulp.task('styles:compile', function () {
-    return gulp.src('source/styles/main.scss')
-      .pipe(sass({outputStyle:'copressed'} ).on('error', sass.logError))
-        .pipe(rename('main.min.css'))
-      .pipe(gulp.dest('/build/css'));
-  });
+gulp.task('styles:compile', function () {
+  return gulp.src('source/styles/main.scss')
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(rename('main.min.css'))
+    .pipe(gulp.dest('build/css'));
+});
+
+
 
 
   gulp.task('sprite', function(cb) {
@@ -80,7 +82,7 @@ gulp.task('watch',function(){
 });
 
 gulp.task('auto', () =>
-    gulp.src('source/styles/**/*.scss')
+    gulp.src('source/styles/main.scss')
         .pipe(sourcemaps.init())
         .pipe(autoprefixer())
         .pipe(sourcemaps.write('.'))
