@@ -1,1 +1,1 @@
-window.Project = {}; 
+window.pj = {};
